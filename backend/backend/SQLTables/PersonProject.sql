@@ -4,9 +4,9 @@ CREATE TABLE PersonProject
     ProjectId INT,
     CansInProject INT DEFAULT 0,
     TotalMetersInProject int DEFAULT 0,
-    StartLocation geography,
-    EndLocation geography,
-    GeoRoute geography,
+   -- StartLocation geography,
+   -- EndLocation geography,
+   -- GeoRoute geography,
 
     PRIMARY KEY (PersonId, ProjectId),
     FOREIGN KEY (PersonId) REFERENCES Person(PersonId),
