@@ -1,14 +1,17 @@
 ﻿using backend.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 
 namespace backend.Context
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> contextOptions) : base(contextOptions)
         {
 
         }
-        public DbSet<Person> Persons { get; set; }
+
+        public DbSet<Project> Projects { get; set; }
     }
 }

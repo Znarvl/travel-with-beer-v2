@@ -254,3 +254,9 @@ C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\ru
 C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

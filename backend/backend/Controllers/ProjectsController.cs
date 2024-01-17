@@ -12,47 +12,47 @@ namespace backend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PeopleController : ControllerBase
+    public class ProjectsController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
 
-        public PeopleController(ApplicationDbContext context)
+        public ProjectsController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/People
+        // GET: api/Projects
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Person>>> GetPersons()
+        public async Task<ActionResult<IEnumerable<Project>>> GetProject()
         {
-            return await _context.Persons.ToListAsync();
+            return await _context.Projects.ToListAsync();
         }
 
-        // GET: api/People/5
+        // GET: api/Projects/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Person>> GetPerson(int id)
+        public async Task<ActionResult<Project>> GetProject(int id)
         {
-            var person = await _context.Persons.FindAsync(id);
+            var project = await _context.Projects.FindAsync(id);
 
-            if (person == null)
+            if (project == null)
             {
                 return NotFound();
             }
 
-            return person;
+            return project;
         }
 
-        // PUT: api/People/5
+        // PUT: api/Projects/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPerson(int id, Person person)
+        public async Task<IActionResult> PutProject(int id, Project project)
         {
-            if (id != person.Id)
+            if (id != project.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(person).State = EntityState.Modified;
+            _context.Entry(project).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace backend.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PersonExists(id))
+                if (!ProjectExists(id))
                 {
                     return NotFound();
                 }
@@ -73,36 +73,36 @@ namespace backend.Controllers
             return NoContent();
         }
 
-        // POST: api/People
+        // POST: api/Projects
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Person>> PostPerson(Person person)
+        public async Task<ActionResult<Project>> PostProject(Project project)
         {
-            _context.Persons.Add(person);
+            _context.Projects.Add(project);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPerson", new { id = person.Id }, person);
+            return CreatedAtAction("GetProject", new { id = project.Id }, project);
         }
 
-        // DELETE: api/People/5
+        // DELETE: api/Projects/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePerson(int id)
+        public async Task<IActionResult> DeleteProject(int id)
         {
-            var person = await _context.Persons.FindAsync(id);
-            if (person == null)
+            var project = await _context.Projects.FindAsync(id);
+            if (project == null)
             {
                 return NotFound();
             }
 
-            _context.Persons.Remove(person);
+            _context.Projects.Remove(project);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool PersonExists(int id)
+        private bool ProjectExists(int id)
         {
-            return _context.Persons.Any(e => e.Id == id);
+            return _context.Projects.Any(e => e.Id == id);
         }
     }
 }
