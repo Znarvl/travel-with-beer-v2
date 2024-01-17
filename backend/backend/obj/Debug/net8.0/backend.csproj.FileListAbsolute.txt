@@ -29,7 +29,6 @@ C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Mi
 C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Microsoft.Spatial.dll
 C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\znarv\Documents\travel-with-beer-v2\backend\backend\bin\Debug\net8.0\Mono.TextTemplating.dll

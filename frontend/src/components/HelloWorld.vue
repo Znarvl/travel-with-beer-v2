@@ -1,12 +1,23 @@
 <script setup lang="ts">
+import {defineProps, reactive} from 'vue';
 defineProps<{
   msg: string
 }>()
+
+const state = reactive({
+  count: 0,
+  message: 'empty'
+
+})
+
+fetch('http://localhost:5038/test').then(res => res.text()).then(t => state.message = t )
 </script>
 
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
+    <h1 class="green">{{ state.message }}</h1>
+
     <h3>
       You’ve successfully created a project with
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
